@@ -1,0 +1,17 @@
+/* 
+  Localized.strings
+  GitUsers
+
+  Created by Lexiren on 3/30/15.
+  Copyright (c) 2015 maidanykdev. All rights reserved.
+*/
+
+//Error Descriptions
+"WrongDataFormatErrorDescription" = "Неправильний формат даних";
+
+//Error Title
+"ErrorTitle" = "Помилка";
+"PullToRefresh" = "Потягніть, щоб оновити";
+
+//Buttons' Titles
+"CancelButtonTitle" = "Скасувати";

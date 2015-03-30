@@ -1,0 +1,17 @@
+/* 
+  Localized.strings
+  GitUsers
+
+  Created by Lexiren on 3/30/15.
+  Copyright (c) 2015 maidanykdev. All rights reserved.
+*/
+
+//Error Descriptions
+"WrongDataFormatErrorDescription" = "Wrong data format";
+
+//Titles
+"ErrorTitle" = "Error";
+"PullToRefresh" = "Pull to refresh";
+
+//Buttons' Titles
+"CancelButtonTitle" = "Cancel";

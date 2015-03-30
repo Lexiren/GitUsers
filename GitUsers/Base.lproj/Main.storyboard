@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7528.3" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="oEv-Hy-ap2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7518.3"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="7ET-1d-Wod">
+            <objects>
+                <navigationController id="oEv-Hy-ap2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rec-Zx-I9C">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sdL-dn-pb7" kind="relationship" relationship="rootViewController" id="xw2-dA-ofh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qa1-RI-Wq1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108.26666666666667" y="348.37333333333333"/>
+        </scene>
+        <!--Users-->
+        <scene sceneID="i01-Nh-254">
+            <objects>
+                <viewController id="sdL-dn-pb7" customClass="UsersListViewController" customModule="GitUsers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TRQ-7C-M4b"/>
+                        <viewControllerLayoutGuide type="bottom" id="jaS-iP-24J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zRh-Pw-oMe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.24999999999999967" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="github" translatesAutoresizingMaskIntoConstraints="NO" id="Ogr-aV-Pbk">
+                                <rect key="frame" x="0.0" y="124" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="qtv-3W-XZa"/>
+                                    <constraint firstAttribute="width" constant="320" id="rz1-5t-4Fm"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="W95-fm-eJc">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GitUserCellIdetifier" rowHeight="100" id="QV9-Oy-kIu" customClass="GitUserTableViewCell" customModule="GitUsers" customModuleProvider="target">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QV9-Oy-kIu" id="l6N-8D-jXv">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="4oc-LP-DLv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="99" id="F3g-Ue-Cs5"/>
+                                                        <constraint firstAttribute="height" constant="99" id="PcM-yb-SYj"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="b38-XV-55l">
+                                                    <rect key="frame" x="114" y="22" width="66" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://profile.url" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eTF-oY-75h">
+                                                    <rect key="frame" x="114" y="59" width="118" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="4oc-LP-DLv" secondAttribute="centerY" id="9XE-e8-iNv"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="b38-XV-55l" secondAttribute="trailing" constant="15" id="KiO-no-dG7"/>
+                                                <constraint firstItem="b38-XV-55l" firstAttribute="leading" secondItem="4oc-LP-DLv" secondAttribute="trailing" constant="15" id="MrF-sR-jzP"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="eTF-oY-75h" secondAttribute="trailing" constant="15" id="OAn-dM-yqt"/>
+                                                <constraint firstItem="eTF-oY-75h" firstAttribute="top" secondItem="b38-XV-55l" secondAttribute="bottom" constant="8" id="SSD-g9-clF"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="eTF-oY-75h" secondAttribute="bottom" constant="8" id="XID-mZ-w7W"/>
+                                                <constraint firstItem="eTF-oY-75h" firstAttribute="leading" secondItem="4oc-LP-DLv" secondAttribute="trailing" constant="15" id="bjl-mZ-4Va"/>
+                                                <constraint firstAttribute="centerY" secondItem="b38-XV-55l" secondAttribute="centerY" constant="13" id="cXM-bu-dpg"/>
+                                                <constraint firstItem="4oc-LP-DLv" firstAttribute="leading" secondItem="l6N-8D-jXv" secondAttribute="leading" id="tA1-W9-IHe"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="avatarView" destination="4oc-LP-DLv" id="Fr9-Xd-9LZ"/>
+                                            <outlet property="imageView" destination="4oc-LP-DLv" id="f6s-9F-gW9"/>
+                                            <outlet property="loginLabel" destination="b38-XV-55l" id="ZxO-Hp-54u"/>
+                                            <outlet property="profileLinkLabel" destination="eTF-oY-75h" id="6zP-cm-J8t"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="sdL-dn-pb7" id="evz-aI-Kgu"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7686274509803922" green="0.80392156862745101" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Ogr-aV-Pbk" secondAttribute="centerY" id="13I-Ir-1j4"/>
+                            <constraint firstAttribute="bottom" secondItem="W95-fm-eJc" secondAttribute="bottom" id="2Vh-Zc-0OS"/>
+                            <constraint firstAttribute="trailing" secondItem="W95-fm-eJc" secondAttribute="trailing" id="M64-gR-n4M"/>
+                            <constraint firstAttribute="centerX" secondItem="Ogr-aV-Pbk" secondAttribute="centerX" id="XXt-TD-2Bk"/>
+                            <constraint firstItem="W95-fm-eJc" firstAttribute="leading" secondItem="zRh-Pw-oMe" secondAttribute="leading" id="gMH-6w-5tf"/>
+                            <constraint firstItem="W95-fm-eJc" firstAttribute="top" secondItem="TRQ-7C-M4b" secondAttribute="bottom" id="hMy-aD-N6r"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Users" id="pdJ-KG-xya"/>
+                    <connections>
+                        <outlet property="tableView" destination="W95-fm-eJc" id="yqY-YC-W6T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OiJ-f1-QG4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="539.20000000000005" y="347.89999999999998"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DefaultAvatar" width="100" height="100"/>
+        <image name="github" width="320" height="320"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

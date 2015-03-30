@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Login"; ObjectID = "b38-XV-55l"; */
+"b38-XV-55l.text" = "Логін";
+
+/* Class = "UILabel"; text = "http://profile.url"; ObjectID = "eTF-oY-75h"; */
+"eTF-oY-75h.text" = "http://profile.url";
+
+/* Class = "UINavigationItem"; title = "Users"; ObjectID = "pdJ-KG-xya"; */
+"pdJ-KG-xya.title" = "Користувачі";
