@@ -63,4 +63,16 @@ class UsersListViewController: UIViewController, UITableViewDataSource {
     return cell!
   }
   
+  // MARK: - Navigation
+  
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == AvatarPreviewControllerSegueFromUserListIdentifier {
+      if let sender = sender as? UITapGestureRecognizer,
+        let destinationController = segue.destinationViewController as? AvatarPreviewController {
+          let touchPoint = sender.locationInView(tableView)
+          let selectedIndexPath = tableView.indexPathForRowAtPoint(touchPoint)
+          destinationController.sourceUser = sourceItems[selectedIndexPath!.row]
+      }
+    }
+  }
 }

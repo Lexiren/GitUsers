@@ -21,10 +21,11 @@ class GitUserTableViewCell: UITableViewCell {
       loginLabel.text = gitUser?.login
       profileLinkLabel.text = gitUser?.profileLink
       
-      if let imageLink = gitUser?.avatarLink {
+      if let imageLink = gitUser?.avatarLink,
+         let imageSize = SettingsBundleManager.sharedInstance.imageSmallSize.toIntWithScreenScale() {
         if let imageURL = NSURL(string: imageLink,
          parametеr: "size",
-         value: String(SettingsBundleManager.sharedInstance.imageSmallSize*Int(UIScreen.mainScreen().scale)))
+         value: String(imageSize))
         {
           avatarView.setImageWithURL(imageURL, placeholderImage: UIImage(named: DefaultAvatarName))
         }

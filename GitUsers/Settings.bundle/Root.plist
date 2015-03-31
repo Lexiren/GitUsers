@@ -44,6 +44,18 @@
 			<key>KeyboardType</key>
 			<string>NumberPad</string>
 		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<integer>400</integer>
+			<key>Key</key>
+			<string>SettingsImageSizeLarge</string>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Large</string>
+			<key>KeyboardType</key>
+			<string>NumberPad</string>
+		</dict>
 	</array>
 	<key>StringsTable</key>
 	<string>Root</string>

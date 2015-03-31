@@ -14,7 +14,7 @@ class DataManager: DataSourceProtocol {
   static let sharedInstance = DataManager()
   private lazy var networkManager: AFHTTPRequestOperationManager = {
     let serverURL = NSURL(string: SettingsBundleManager.sharedInstance.serverAPI)
-    return AFHTTPRequestOperationManager(baseURL:serverURL)
+    return AFHTTPRequestOperationManager(baseURL: serverURL)
   }()
   
   func getListGitUsersWithCompletion(completion: ((CompletionResult<GitUser>) -> Void)) {
