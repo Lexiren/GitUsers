@@ -10,6 +10,7 @@ import Foundation
 
 let APIServerSettingsKey = "SettingsAPIServer"
 let SettingsImageSizeSmallKey = "SettingsImageSizeSmall"
+let SettingsImageSizeLargeKey = "SettingsImageSizeLarge"
 
 class SettingsBundleManager {
   static var sharedInstance = SettingsBundleManager()
@@ -21,9 +22,15 @@ class SettingsBundleManager {
     }
   }
   
-  var imageSmallSize: Int {
+  var imageSmallSize: String {
     get {
-      return settings.stringForKey(SettingsImageSizeSmallKey)!.toInt()!
+      return settings.stringForKey(SettingsImageSizeSmallKey)!
+    }
+  }
+  
+  var imageLargeSize: String {
+    get {
+      return settings.stringForKey(SettingsImageSizeLargeKey)!
     }
   }
   

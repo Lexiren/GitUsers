@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8426F0EE1ACA850D00C4EB9B /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426F0ED1ACA850D00C4EB9B /* String+Extensions.swift */; };
 		84B4AFD41AC80FA600ED1160 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4AFD31AC80FA600ED1160 /* AppDelegate.swift */; };
 		84B4AFD91AC80FA600ED1160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B4AFD71AC80FA600ED1160 /* Main.storyboard */; };
 		84B4AFDE1AC80FA600ED1160 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B4AFDC1AC80FA600ED1160 /* LaunchScreen.xib */; };
@@ -19,6 +20,7 @@
 		84B4B0161AC8BC9D00ED1160 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84B4B0151AC8BC9D00ED1160 /* Settings.bundle */; };
 		84B4B0181AC9376100ED1160 /* NSURL+Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4B0171AC9376100ED1160 /* NSURL+Parameters.swift */; };
 		84B4B01A1AC972CE00ED1160 /* SettingsBundleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4B0191AC972CE00ED1160 /* SettingsBundleManager.swift */; };
+		84F9D9AA1AC9DE41000FBB7C /* AvatarPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9D9A91AC9DE41000FBB7C /* AvatarPreviewController.swift */; };
 		84FC63A71AC9AEE200B7053F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FC63A61AC9AEE200B7053F /* Images.xcassets */; };
 		84FC63A91AC9B42500B7053F /* NSError+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC63A81AC9B42500B7053F /* NSError+Extensions.swift */; };
 		84FC63B71AC9BD6200B7053F /* UIAlertView+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC63B61AC9BD6200B7053F /* UIAlertView+Error.swift */; };
@@ -38,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		21EF66128CD4514C7928D88E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8426F0ED1ACA850D00C4EB9B /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "Extensions/String+Extensions.swift"; sourceTree = "<group>"; };
 		84B4AFCE1AC80FA600ED1160 /* GitUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B4AFD21AC80FA600ED1160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84B4AFD31AC80FA600ED1160 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +58,7 @@
 		84B4B0151AC8BC9D00ED1160 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		84B4B0171AC9376100ED1160 /* NSURL+Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSURL+Parameters.swift"; path = "Extensions/NSURL+Parameters.swift"; sourceTree = "<group>"; };
 		84B4B0191AC972CE00ED1160 /* SettingsBundleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsBundleManager.swift; path = Model/SettingsBundleManager.swift; sourceTree = "<group>"; };
+		84F9D9A91AC9DE41000FBB7C /* AvatarPreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarPreviewController.swift; path = UI/ViewControllers/AvatarPreviewController.swift; sourceTree = "<group>"; };
 		84FC63A61AC9AEE200B7053F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		84FC63A81AC9B42500B7053F /* NSError+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSError+Extensions.swift"; path = "Extensions/NSError+Extensions.swift"; sourceTree = "<group>"; };
 		84FC63AA1AC9B59800B7053F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Main.strings; sourceTree = "<group>"; };
@@ -178,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				84B4AFFA1AC8197E00ED1160 /* UsersListViewController.swift */,
+				84F9D9A91AC9DE41000FBB7C /* AvatarPreviewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 				84B4B0171AC9376100ED1160 /* NSURL+Parameters.swift */,
 				84FC63B61AC9BD6200B7053F /* UIAlertView+Error.swift */,
 				84FC63A81AC9B42500B7053F /* NSError+Extensions.swift */,
+				8426F0ED1ACA850D00C4EB9B /* String+Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -383,7 +389,9 @@
 			files = (
 				84FC63A91AC9B42500B7053F /* NSError+Extensions.swift in Sources */,
 				84B4B00B1AC8655E00ED1160 /* DataSourceProtocol.swift in Sources */,
+				84F9D9AA1AC9DE41000FBB7C /* AvatarPreviewController.swift in Sources */,
 				84B4AFD41AC80FA600ED1160 /* AppDelegate.swift in Sources */,
+				8426F0EE1ACA850D00C4EB9B /* String+Extensions.swift in Sources */,
 				84B4B0091AC861E400ED1160 /* DataManager.swift in Sources */,
 				84B4B0111AC8AFEA00ED1160 /* GitUserTableViewCell.swift in Sources */,
 				84B4B01A1AC972CE00ED1160 /* SettingsBundleManager.swift in Sources */,
